@@ -479,7 +479,7 @@ std::string format_parsed_options(const std::vector<bpo::option>& opts) {
     );
 }
 
-static constexpr char startup_msg[] = "Scylla version {} with build-id {} starting ...\n";
+static constexpr char startup_msg[] = "VP_DEBUG: Scylla version {} with build-id {} starting ...\n";
 
 void print_starting_message(int ac, char** av, const bpo::parsed_options& opts) {
     fmt::print(startup_msg, scylla_version(), get_build_id());
